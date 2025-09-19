@@ -25,3 +25,9 @@ Afinal, conhecimento é o único "BEM" que não pode ser roubado!
 PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc.. de tudo um pouco!
 
 Aprender é preciso!
+
+
+================================
+
+SPACESCAPE [https://github.com/thiagorjes/spacescape]
+DEEPVGL [https://github.com/thiagorjes/DeepVGL]

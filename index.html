@@ -1,43 +1,206 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta name="google-adsense-account" content="ca-pub-7408688486649567">
-<title>Ultimate Force</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-7408688486649567">
+    <title>Ultimate Force - Portfólio</title>
+
+    <style>
+        /* --- Estilos Globais e Reset --- */
+        :root {
+            --bg-color: #121212;
+            --primary-text-color: #e0e0e0;
+            --secondary-text-color: #b3b3b3;
+            --accent-color: #00aaff;
+            --card-bg-color: #1e1e1e;
+            --border-color: #333;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--primary-text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* --- Estrutura e Layout --- */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: var(--secondary-text-color);
+            margin-top: 10px;
+        }
+
+        main {
+            padding: 30px 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: var(--primary-text-color);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .section-title-wrapper {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* --- Seção Sobre --- */
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .lang-section {
+            background-color: var(--card-bg-color);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .lang-section h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        /* --- Seção de Projetos --- */
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-link {
+            display: block;
+            background-color: var(--card-bg-color);
+            color: var(--primary-text-color);
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            transform: translateY(-5px);
+        }
+
+        /* --- Rodapé --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--secondary-text-color);
+            font-style: italic;
+        }
+
+        /* --- Responsividade para Telas Maiores (PC) --- */
+        @media (min-width: 768px) {
+            .about-container {
+                flex-direction: row; /* Coloca os textos lado a lado */
+            }
+
+            .lang-section {
+                flex: 1; /* Faz com que ambas as seções de texto ocupem o mesmo espaço */
+            }
+            
+            .projects-container {
+                flex-direction: row; /* Coloca os botões dos projetos lado a lado */
+                justify-content: center;
+            }
+
+            .project-link {
+                flex-basis: 250px; /* Define uma largura base para os botões */
+            }
+        }
+    </style>
 </head>
 <body>
-One day i said: "When I grow up I'm going to make games... how do you do that?" and as soon as possible I started programming
 
-Eternal fan of C and C++, but my curiosity leads me to learn a little bit of everything. Currently programming in C# (dotnet core), and updating myself in Java and market technologies.
+    <header>
+        <div class="container">
+            <h1>Ultimate Force</h1>
+            <p>Mestre em Ciência da Computação (Inteligência Artificial e Robótica)</p>
+        </div>
+    </header>
 
-Master's degree in computer science (Artificial Intelligence and Robotics)
+    <main class="container">
+        <section id="about">
+            <div class="section-title-wrapper">
+                <h2>Sobre Mim</h2>
+            </div>
+            
+            <div class="about-container">
+                <div class="lang-section">
+                    <h3>In English</h3>
+                    <p>One day I said: "When I grow up I'm going to make games... how do you do that?" and as soon as possible I started programming.</p>
+                    <p>Eternal fan of C and C++, but my curiosity leads me to learn a little bit of everything. Currently programming in C# (dotnet core), and updating myself in Java and market technologies.</p>
+                    <p>Adept of the <a href="https://web.archive.org/web/20211014194234/http://threevirtues.com/" target="_blank">three virtues</a>. Experience in a variety of areas, with keen curiosity to seek more. After all, knowledge is the only "thing" that cannot be stolen!</p>
+                    <p>PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc... a little bit of everything!</p>
+                </div>
 
-Adept of the three virtues (https://web.archive.org/web/20211014194234/http://threevirtues.com/)
-Experience in a variety of areas, with keen curiosity to seek more.
-After all, knowledge is the only "thing" that cannot be stolen!
-PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc... a little bit of everything!
+                <div class="lang-section">
+                    <h3>Em Português</h3>
+                    <p>Um dia disse: "Quando crescer vou fazer jogos... como se faz isso?" e assim que possível comecei a programar.</p>
+                    <p>Eterno fã de C e C++, mas minha curiosidade me leva a aprender um pouco de tudo. Atualmente programando em C# (dotnet core), e me atualizando em Java e tecnologias de mercado.</p>
+                    <p>Adepto das <a href="https://web.archive.org/web/20211014194234/http://threevirtues.com/" target="_blank">três virtudes</a>. Experiência em uma diversidade de áreas, com curiosidade aguçada para buscar mais. Afinal, conhecimento é o único "BEM" que não pode ser roubado!</p>
+                    <p>PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc.. de tudo um pouco!</p>
+                </div>
+            </div>
+        </section>
 
-Learning is necessary!
+        <section id="projects">
+            <div class="section-title-wrapper">
+                <h2>Projetos</h2>
+            </div>
+            <div class="projects-container">
+                <a href="https://github.com/thiagorjes/spacescape" class="project-link" target="_blank">SPACESCAPE</a>
+                <a href="https://github.com/thiagorjes/DeepVGL" class="project-link" target="_blank">DEEPVGL</a>
+            </div>
+        </section>
+    </main>
 
-==============================
+    <footer>
+        <p>Aprender é preciso! | Learning is necessary!</p>
+    </footer>
 
-Um dia disse: "Quando crescer vou fazer jogos... como se faz isso?" e assim que possível comecei a programar
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7408688486649567" crossorigin="anonymous"></script>
 
-Eterno fã de C e C++, mas minha curiosidade me leva a aprender um pouco de tudo. Atualmente programando em C# (dotnet core), e me atualizando em Java e tecnologias de mercado.
-
-Mestre em ciência da computação
-
-Adepto das três virtudes (https://web.archive.org/web/20211014194234/http://threevirtues.com/)
-Experiência em uma diversidade de áreas, com curiosidade aguçada para buscar mais. 
-Afinal, conhecimento é o único "BEM" que não pode ser roubado! 
-PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc.. de tudo um pouco!
-
-Aprender é preciso!
-
-
-================================
-
-<a href="https://github.com/thiagorjes/spacescape" >SPACESCAPE</a>
-<a href="https://github.com/thiagorjes/DeepVGL" >DEEPVGL</a>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7408688486649567"
-     crossorigin="anonymous"></script>
 </body>
 </html>

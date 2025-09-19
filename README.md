@@ -29,5 +29,5 @@ Aprender é preciso!
 
 ================================
 
-SPACESCAPE [https://github.com/thiagorjes/spacescape]
-DEEPVGL [https://github.com/thiagorjes/DeepVGL]
+[SPACESCAPE](https://github.com/thiagorjes/spacescape)
+[DEEPVGL](https://github.com/thiagorjes/DeepVGL)

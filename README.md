@@ -29,6 +29,7 @@ Aprender é preciso!
 
 ================================
 
-[SPACESCAPE](https://github.com/thiagorjes/spacescape)
+[SPACESCAPE](https://github.com/thiagorjes/spacescape) - versão web
+[SPACESCAPE](https://expo.dev/accounts/thiagorjes/projects/SpaceScape/builds/e11a6944-4c26-4923-883d-765ace7ff02e) - versão para android.
 
 [DEEPVGL](https://github.com/thiagorjes/DeepVGL)

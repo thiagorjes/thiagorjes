@@ -31,6 +31,6 @@ Aprender é preciso!
 
 [SPACESCAPE](https://github.com/thiagorjes/spacescape) - versão web
 
-[SPACESCAPE](https://expo.dev/accounts/thiagorjes/projects/SpaceScape/builds/e11a6944-4c26-4923-883d-765ace7ff02e) - versão para android.
+[SPACESCAPE](https://expo.dev/artifacts/eas/tNd6wpakoNxdk3xWdi7TkU.apk) - versão para android.
 
 [DEEPVGL](https://github.com/thiagorjes/DeepVGL)

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,26 +134,53 @@
         /* --- Responsividade para Telas Maiores (PC) --- */
         @media (min-width: 768px) {
             .about-container {
-                flex-direction: row; /* Coloca os textos lado a lado */
+                flex-direction: row;
+                /* Coloca os textos lado a lado */
             }
 
             .lang-section {
-                flex: 1; /* Faz com que ambas as seções de texto ocupem o mesmo espaço */
+                flex: 1;
+                /* Faz com que ambas as seções de texto ocupem o mesmo espaço */
             }
-            
+
             .projects-container {
-                flex-direction: row; /* Coloca os botões dos projetos lado a lado */
+                flex-direction: row;
+                /* Coloca os botões dos projetos lado a lado */
                 justify-content: center;
             }
 
             .project-link {
-                flex-basis: 250px; /* Define uma largura base para os botões */
+                flex-basis: 250px;
+                /* Define uma largura base para os botões */
             }
         }
     </style>
 </head>
-<body>
 
+<body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBTkb531VznWPdP4-H6koUsaaqfclk4IhE",
+            authDomain: "ultimateforce-6dad4.firebaseapp.com",
+            projectId: "ultimateforce-6dad4",
+            storageBucket: "ultimateforce-6dad4.firebasestorage.app",
+            messagingSenderId: "350709553465",
+            appId: "1:350709553465:web:d84a979913e0bc94df30e8",
+            measurementId: "G-85P0MP2S89"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
     <header>
         <div class="container">
             <h1>Ultimate Force</h1>
@@ -162,23 +190,33 @@
     <main class="container">
         <section id="about">
             <div class="section-title-wrapper">
-                <h2>Sobre Mim</h2><br/>
+                <h2>Sobre Mim</h2><br />
             </div>
-            
+
             <div class="about-container">
                 <div class="lang-section">
                     <h3>In English</h3>
-                    <p>One day I said: "When I grow up I'm going to make games... how do you do that?" and as soon as possible I started programming.</p>
-                    <p>Eternal fan of C and C++, but my curiosity leads me to learn a little bit of everything. Currently programming in C# (dotnet core), and updating myself in Java and market technologies.</p>
-                    <p>Adept of the <a href="https://web.archive.org/web/20211014194234/http://threevirtues.com/" target="_blank">three virtues</a>. Experience in a variety of areas, with keen curiosity to seek more. After all, knowledge is the only "thing" that cannot be stolen!</p>
-                    <p>PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc... a little bit of everything!</p>
+                    <p>One day I said: "When I grow up I'm going to make games... how do you do that?" and as soon as
+                        possible I started programming.</p>
+                    <p>Eternal fan of C and C++, but my curiosity leads me to learn a little bit of everything.
+                        Currently programming in C# (dotnet core), and updating myself in Java and market technologies.
+                    </p>
+                    <p>Adept of the <a href="https://web.archive.org/web/20211014194234/http://threevirtues.com/"
+                            target="_blank">three virtues</a>. Experience in a variety of areas, with keen curiosity to
+                        seek more. After all, knowledge is the only "thing" that cannot be stolen!</p>
+                    <p>PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc... a little bit of
+                        everything!</p>
                 </div>
 
                 <div class="lang-section">
                     <h3>Em Português</h3>
-                    <p>Um dia disse: "Quando crescer vou fazer jogos... como se faz isso?" e assim que possível comecei a programar.</p>
-                    <p>Eterno fã de C e C++, mas minha curiosidade me leva a aprender um pouco de tudo. Atualmente programando em C# (dotnet core), e me atualizando em Java e tecnologias de mercado.</p>
-                    <p>Adepto das <a href="https://web.archive.org/web/20211014194234/http://threevirtues.com/" target="_blank">três virtudes</a>. Experiência em uma diversidade de áreas, com curiosidade aguçada para buscar mais. Afinal, conhecimento é o único "BEM" que não pode ser roubado!</p>
+                    <p>Um dia disse: "Quando crescer vou fazer jogos... como se faz isso?" e assim que possível comecei
+                        a programar.</p>
+                    <p>Eterno fã de C e C++, mas minha curiosidade me leva a aprender um pouco de tudo. Atualmente
+                        programando em C# (dotnet core), e me atualizando em Java e tecnologias de mercado.</p>
+                    <p>Adepto das <a href="https://web.archive.org/web/20211014194234/http://threevirtues.com/"
+                            target="_blank">três virtudes</a>. Experiência em uma diversidade de áreas, com curiosidade
+                        aguçada para buscar mais. Afinal, conhecimento é o único "BEM" que não pode ser roubado!</p>
                     <p>PowerShell, Shellscript, Hyper-v, Windows Server, Debian Linux, etc.. de tudo um pouco!</p>
                 </div>
             </div>
@@ -189,19 +227,26 @@
                 <h2>Projetos</h2>
             </div>
             <div class="projects-container">
-                <a href="https://spacescape.ultimateforce.com.br" class="project-link" target="_blank">SPACESCAPE - WEB</a>
-                <a href="https://expo.dev/artifacts/eas/tNd6wpakoNxdk3xWdi7TkU.apk" class="project-link" target="_blank">SPACESCAPE - ANDROID</a>
+                <a href="https://spacescape.ultimateforce.com.br" class="project-link" target="_blank">SPACESCAPE -
+                    WEB</a>
+                <a href="https://expo.dev/artifacts/eas/tNd6wpakoNxdk3xWdi7TkU.apk" class="project-link"
+                    target="_blank">SPACESCAPE - ANDROID</a>
                 <a href="https://github.com/thiagorjes/DeepVGL" class="project-link" target="_blank">DEEPVGL</a>
             </div>
         </section>
     </main>
-    <center><p>Thiago Goncalves Cavalcante é Mestre em Ciência da Computação (Inteligência Artificial e Robótica)</p></center>
+    <center>
+        <p>Thiago Goncalves Cavalcante é Mestre em Ciência da Computação (Inteligência Artificial e Robótica)</p>
+    </center>
     <footer>
         <p>Aprender é preciso! | Learning is necessary!</p>
-        <p><a href="privacy.html" style="color: var(--accent-color); text-decoration: none;">Política de Privacidade</a></p>
+        <p><a href="privacy.html" style="color: var(--accent-color); text-decoration: none;">Política de Privacidade</a>
+        </p>
     </footer>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7408688486649567" crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7408688486649567"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
